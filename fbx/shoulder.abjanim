@@ -1,0 +1,1044 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<abjanim>
+	<skeleton count='5'>
+		<joint name='joint1' parent='ROOT'>
+			<mat>0.007,-0.219,0.000,0.000,0.219,0.007,-0.000,0.000,0.000,0.000,0.219,0.000,-1.559,-0.153,-0.000,1.000</mat>
+			<decompT>-1.559,-0.153,-0.000</decompT>
+			<decompR>-0.000,0.000,-0.696,0.718</decompR>
+		</joint>
+		<joint name='joint2' parent='joint1'>
+			<mat>-0.213,0.050,0.000,0.000,0.050,0.213,0.000,0.000,0.000,0.000,-0.219,0.000,-1.010,-4.318,-0.000,1.000</mat>
+			<decompT>-1.010,-4.318,-0.000</decompT>
+			<decompR>0.116,0.993,0.000,-0.000</decompR>
+		</joint>
+		<joint name='joint3' parent='joint2'>
+			<mat>-0.487,-0.873,-0.000,0.000,-0.873,0.487,0.000,0.000,-0.000,0.000,-1.000,0.000,13.524,-15.886,-3.097,1.000</mat>
+			<decompT>13.524,-15.886,-3.097</decompT>
+			<decompR>-0.506,0.862,0.000,-0.000</decompR>
+		</joint>
+		<joint name='joint4' parent='joint3'>
+			<mat>-0.120,-0.183,-0.000,0.000,-0.183,0.120,0.000,0.000,-0.000,0.000,-0.219,0.000,-0.692,-3.561,-0.693,1.000</mat>
+			<decompT>-0.692,-3.561,-0.693</decompT>
+			<decompR>-0.475,0.880,0.000,-0.000</decompR>
+		</joint>
+		<joint name='joint5' parent='joint4'>
+			<mat>0.219,-0.000,-0.000,0.000,0.000,0.219,-0.000,0.000,0.000,0.000,0.219,0.000,5.041,1.137,0.503,1.000</mat>
+			<decompT>5.041,1.137,0.503</decompT>
+			<decompR>-0.000,0.000,-0.000,1.000</decompR>
+		</joint>
+	</skeleton>
+	<animations count='1'>
+		<animation name='Take 001' length='50' numJoints='5'>
+			<track id='0' name='joint1' parent='ROOT'>
+				 <frame num='1'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='2'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='3'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='4'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='5'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='6'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='7'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='8'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='9'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='10'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='11'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='12'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='13'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='14'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='15'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='16'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='17'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='18'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='19'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='20'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='21'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='22'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='23'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='24'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='25'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='26'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='27'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='28'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='29'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='30'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='31'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='32'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='33'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='34'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='35'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='36'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='37'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='38'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='39'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='40'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='41'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='42'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='43'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='44'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='45'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='46'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='47'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='48'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='49'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+				 <frame num='50'>
+					<decompT>-0.477,7.147,0.000</decompT>
+					<decompR>0.000,0.000,0.696,0.718</decompR>
+				 </frame>
+			 </track>
+			<track id='1' name='joint2' parent='joint1'>
+				 <frame num='1'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='2'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='3'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='4'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='5'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='6'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='7'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='8'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='9'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='10'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='11'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='12'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='13'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='14'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='15'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='16'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='17'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='18'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='19'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='20'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='21'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='22'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='23'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='24'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='25'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='26'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='27'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='28'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='29'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='30'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='31'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='32'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='33'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='34'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='35'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='36'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='37'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='38'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='39'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='40'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='41'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='42'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='43'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='44'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='45'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='46'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='47'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='48'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='49'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='50'>
+					<decompT>2.873,-0.027,-0.000</decompT>
+					<decompR>0.775,0.632,0.000,0.000</decompR>
+				 </frame>
+			 </track>
+			<track id='2' name='joint3' parent='joint2'>
+				 <frame num='1'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,0.000,-0.603,0.798</decompR>
+				 </frame>
+				 <frame num='2'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,0.000,-0.601,0.799</decompR>
+				 </frame>
+				 <frame num='3'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,0.000,-0.594,0.804</decompR>
+				 </frame>
+				 <frame num='4'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,0.000,-0.584,0.811</decompR>
+				 </frame>
+				 <frame num='5'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,0.000,-0.571,0.821</decompR>
+				 </frame>
+				 <frame num='6'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,0.000,-0.554,0.832</decompR>
+				 </frame>
+				 <frame num='7'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,-0.000,-0.535,0.845</decompR>
+				 </frame>
+				 <frame num='8'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,0.000,-0.512,0.859</decompR>
+				 </frame>
+				 <frame num='9'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,-0.000,-0.488,0.873</decompR>
+				 </frame>
+				 <frame num='10'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,0.000,-0.462,0.887</decompR>
+				 </frame>
+				 <frame num='11'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,0.000,-0.434,0.901</decompR>
+				 </frame>
+				 <frame num='12'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,-0.000,-0.405,0.914</decompR>
+				 </frame>
+				 <frame num='13'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,-0.000,-0.375,0.927</decompR>
+				 </frame>
+				 <frame num='14'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,-0.000,-0.346,0.938</decompR>
+				 </frame>
+				 <frame num='15'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,-0.000,-0.316,0.949</decompR>
+				 </frame>
+				 <frame num='16'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,-0.000,-0.288,0.958</decompR>
+				 </frame>
+				 <frame num='17'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,-0.000,-0.260,0.965</decompR>
+				 </frame>
+				 <frame num='18'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,-0.000,-0.235,0.972</decompR>
+				 </frame>
+				 <frame num='19'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,0.000,-0.212,0.977</decompR>
+				 </frame>
+				 <frame num='20'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,0.000,-0.193,0.981</decompR>
+				 </frame>
+				 <frame num='21'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.000,0.000,-0.176,0.984</decompR>
+				 </frame>
+				 <frame num='22'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,0.000,-0.164,0.986</decompR>
+				 </frame>
+				 <frame num='23'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,0.000,-0.156,0.988</decompR>
+				 </frame>
+				 <frame num='24'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>-0.000,0.000,-0.154,0.988</decompR>
+				 </frame>
+				 <frame num='25'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.001,0.008,-0.154,0.988</decompR>
+				 </frame>
+				 <frame num='26'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.005,0.031,-0.154,0.988</decompR>
+				 </frame>
+				 <frame num='27'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.010,0.066,-0.153,0.986</decompR>
+				 </frame>
+				 <frame num='28'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.017,0.111,-0.153,0.982</decompR>
+				 </frame>
+				 <frame num='29'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.026,0.164,-0.152,0.974</decompR>
+				 </frame>
+				 <frame num='30'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.035,0.223,-0.150,0.963</decompR>
+				 </frame>
+				 <frame num='31'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.044,0.285,-0.147,0.946</decompR>
+				 </frame>
+				 <frame num='32'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.054,0.348,-0.144,0.925</decompR>
+				 </frame>
+				 <frame num='33'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.064,0.410,-0.140,0.899</decompR>
+				 </frame>
+				 <frame num='34'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.073,0.467,-0.135,0.871</decompR>
+				 </frame>
+				 <frame num='35'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.081,0.519,-0.131,0.841</decompR>
+				 </frame>
+				 <frame num='36'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.088,0.564,-0.126,0.811</decompR>
+				 </frame>
+				 <frame num='37'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.093,0.601,-0.122,0.784</decompR>
+				 </frame>
+				 <frame num='38'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.098,0.629,-0.119,0.762</decompR>
+				 </frame>
+				 <frame num='39'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.100,0.646,-0.116,0.748</decompR>
+				 </frame>
+				 <frame num='40'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='41'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='42'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='43'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='44'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='45'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='46'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='47'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='48'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='49'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+				 <frame num='50'>
+					<decompT>1.525,-0.523,0.678</decompT>
+					<decompR>0.101,0.652,-0.115,0.743</decompR>
+				 </frame>
+			 </track>
+			<track id='3' name='joint4' parent='joint3'>
+				 <frame num='1'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='2'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='3'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='4'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='5'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='6'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='7'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='8'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='9'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='10'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='11'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='12'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='13'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='14'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='15'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='16'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='17'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='18'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='19'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='20'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='21'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='22'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='23'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='24'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='25'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='26'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='27'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='28'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='29'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='30'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='31'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='32'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='33'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='34'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='35'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='36'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='37'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='38'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='39'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='40'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='41'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='42'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='43'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='44'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='45'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='46'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='47'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='48'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='49'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+				 <frame num='50'>
+					<decompT>15.512,0.577,0.070</decompT>
+					<decompR>-0.000,-0.000,0.036,0.999</decompR>
+				 </frame>
+			 </track>
+			<track id='4' name='joint5' parent='joint4'>
+				 <frame num='1'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='2'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='3'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='4'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='5'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='6'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='7'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='8'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='9'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='10'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='11'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='12'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='13'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='14'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='15'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='16'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='17'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='18'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='19'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='20'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='21'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='22'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='23'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='24'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='25'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='26'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='27'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='28'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='29'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='30'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='31'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='32'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='33'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='34'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='35'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,-0.000</decompR>
+				 </frame>
+				 <frame num='36'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='37'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='38'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='39'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,0.000,0.000</decompR>
+				 </frame>
+				 <frame num='40'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='41'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='42'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='43'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='44'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='45'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='46'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='47'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='48'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='49'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+				 <frame num='50'>
+					<decompT>3.025,0.030,-0.190</decompT>
+					<decompR>-0.475,0.880,-0.000,0.000</decompR>
+				 </frame>
+			 </track>
+		</animation>
+	</animations>
+</abjanim>

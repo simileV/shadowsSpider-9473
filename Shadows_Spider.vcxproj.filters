@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\frustumCull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gizmo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GL_render.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Setup_obj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Setup_texShaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StringManip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CreateN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Paint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tinyxml2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FBXtoAbj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math_3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scenes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core_typedefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gizmo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GL_render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Setup_obj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Setup_texShaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StringManip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shaders\Core_glsl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CreateN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Paint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tinyxml2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FBXtoAbj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FileSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ogldev_math_3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ogldev_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="glew32.dll" />
+    <None Include="shaders\alphaAsRGBAF.glsl" />
+    <None Include="shaders\bbF.glsl" />
+    <None Include="shaders\bbV.glsl" />
+    <None Include="shaders\billF.glsl" />
+    <None Include="shaders\billV.glsl" />
+    <None Include="shaders\blendModeF.glsl" />
+    <None Include="shaders\bloomF.glsl" />
+    <None Include="shaders\copyTexF.glsl" />
+    <None Include="shaders\defF.glsl" />
+    <None Include="shaders\depthRevF.glsl" />
+    <None Include="shaders\depthRevV.glsl" />
+    <None Include="shaders\downF.glsl" />
+    <None Include="shaders\downV.glsl" />
+    <None Include="shaders\edgeDetectF.glsl" />
+    <None Include="shaders\eraseMixF.glsl" />
+    <None Include="shaders\fboV.glsl" />
+    <None Include="shaders\finalF.glsl" />
+    <None Include="shaders\fxaaF.glsl" />
+    <None Include="shaders\gaussF.glsl" />
+    <None Include="shaders\gBufferF.glsl" />
+    <None Include="shaders\gBufferV.glsl" />
+    <None Include="shaders\giz_circV.glsl" />
+    <None Include="shaders\gizF.glsl" />
+    <None Include="shaders\gizV.glsl" />
+    <None Include="shaders\gridF.glsl" />
+    <None Include="shaders\lumaAdaptF.glsl" />
+    <None Include="shaders\lumaInitF.glsl" />
+    <None Include="shaders\paintProjF.glsl" />
+    <None Include="shaders\paintProjV.glsl" />
+    <None Include="shaders\paintStrokeF.glsl" />
+    <None Include="shaders\selRectF.glsl" />
+    <None Include="shaders\selRectV.glsl" />
+    <None Include="shaders\shadowF.glsl" />
+    <None Include="shaders\shadowV.glsl" />
+    <None Include="shaders\skyF.glsl" />
+    <None Include="shaders\skyV.glsl" />
+    <None Include="shaders\ssao_32F.glsl" />
+    <None Include="shaders\ssao_64F.glsl" />
+    <None Include="shaders\ssrF.glsl" />
+    <None Include="shaders\stencilGeoF.glsl" />
+    <None Include="shaders\stencilGeoV.glsl" />
+    <None Include="shaders\stencilHiF.glsl" />
+    <None Include="shaders\stencilHiV.glsl" />
+    <None Include="shaders\tonemapF.glsl" />
+    <None Include="shaders\txtF.glsl" />
+    <None Include="shaders\txtG.glsl" />
+    <None Include="shaders\txtV.glsl" />
+    <None Include="shaders\volumeLightF.glsl" />
+    <None Include="shaders\volumeLightV.glsl" />
+    <None Include="shaders\wireframeF.glsl" />
+    <None Include="shaders\wireframeV.glsl" />
+    <None Include="shaders\wsQuadV.glsl" />
+    <None Include="shaders\cursorF.glsl" />
+    <None Include="shaders\cursorV.glsl" />
+    <None Include="assimp-vc140-mt.dll" />
+    <None Include="assimp-vc140-mtd.dll" />
+    <None Include="shaders\gBufferAnimV.glsl" />
+    <None Include="shaders\shadowAnimV.glsl" />
+    <None Include="shaders\stencilGeoAnimV.glsl" />
+    <None Include="shaders\stencilHiAnimV.glsl" />
+    <None Include="shaders\depthRevAnimV.glsl" />
+    <None Include="shaders\colorIDAnimV.glsl" />
+    <None Include="shaders\colorIDF.glsl" />
+    <None Include="shaders\colorIDV.glsl" />
+    <None Include="shaders\normalRuffV.glsl" />
+    <None Include="shaders\normalRuffF.glsl" />
+    <None Include="shaders\normalRuffAnimV.glsl" />
+    <None Include="shaders\finalStereoF.glsl" />
+    <None Include="shaders\stereoPostF.glsl" />
+    <None Include="shaders\stereoPrevF.glsl" />
+    <None Include="shaders\filterSizeMatch.glsl" />
+    <None Include="shaders\transpF.glsl" />
+    <None Include="shaders\transpV.glsl" />
+    <None Include="shaders\transpCompF.glsl" />
+    <None Include="shaders\txtDieF.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\ABJ.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icons\winIcon.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

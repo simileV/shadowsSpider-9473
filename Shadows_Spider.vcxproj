@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AI.cpp" />
+    <ClCompile Include="src\CreateN.cpp" />
+    <ClCompile Include="src\FileSystem.cpp" />
+    <ClCompile Include="src\frustumCull.cpp" />
+    <ClCompile Include="src\Gizmo.cpp" />
+    <ClCompile Include="src\GL_render.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Input.cpp" />
+    <ClCompile Include="src\math_3d.cpp" />
+    <ClCompile Include="src\Object.cpp" />
+    <ClCompile Include="src\Paint.cpp" />
+    <ClCompile Include="src\FBXtoAbj.cpp" />
+    <ClCompile Include="src\Scenes.cpp" />
+    <ClCompile Include="src\Setup_obj.cpp" />
+    <ClCompile Include="src\Setup_texShaders.cpp" />
+    <ClCompile Include="src\StringManip.cpp" />
+    <ClCompile Include="src\tinyxml2.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shaders\Core_glsl.h" />
+    <ClInclude Include="src\AI.h" />
+    <ClInclude Include="src\Core_typedefs.h" />
+    <ClInclude Include="src\CreateN.h" />
+    <ClInclude Include="src\FileSystem.h" />
+    <ClInclude Include="src\Gizmo.h" />
+    <ClInclude Include="src\GL_render.h" />
+    <ClInclude Include="src\Input.h" />
+    <ClInclude Include="src\Core.h" />
+    <ClInclude Include="src\Object.h" />
+    <ClInclude Include="src\ogldev_math_3d.h" />
+    <ClInclude Include="src\ogldev_util.h" />
+    <ClInclude Include="src\Paint.h" />
+    <ClInclude Include="src\FBXtoAbj.h" />
+    <ClInclude Include="src\Setup_obj.h" />
+    <ClInclude Include="src\Setup_texShaders.h" />
+    <ClInclude Include="src\stb_image.h" />
+    <ClInclude Include="src\StringManip.h" />
+    <ClInclude Include="src\tinyxml2.h" />
+    <ClInclude Include="src\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\ABJ.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icons\winIcon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assimp-vc140-mt.dll" />
+    <None Include="assimp-vc140-mtd.dll" />
+    <None Include="glew32.dll" />
+    <None Include="shaders\alphaAsRGBAF.glsl" />
+    <None Include="shaders\colorIDAnimV.glsl" />
+    <None Include="shaders\bbF.glsl" />
+    <None Include="shaders\bbV.glsl" />
+    <None Include="shaders\billF.glsl" />
+    <None Include="shaders\billV.glsl" />
+    <None Include="shaders\blendModeF.glsl" />
+    <None Include="shaders\bloomF.glsl" />
+    <None Include="shaders\colorIDF.glsl" />
+    <None Include="shaders\colorIDV.glsl" />
+    <None Include="shaders\copyTexF.glsl" />
+    <None Include="shaders\cursorF.glsl" />
+    <None Include="shaders\cursorV.glsl" />
+    <None Include="shaders\defF.glsl" />
+    <None Include="shaders\depthRevAnimV.glsl" />
+    <None Include="shaders\depthRevF.glsl" />
+    <None Include="shaders\depthRevV.glsl" />
+    <None Include="shaders\downF.glsl" />
+    <None Include="shaders\downV.glsl" />
+    <None Include="shaders\edgeDetectF.glsl" />
+    <None Include="shaders\eraseMixF.glsl" />
+    <None Include="shaders\fboV.glsl" />
+    <None Include="shaders\filterSizeMatch.glsl" />
+    <None Include="shaders\finalF.glsl" />
+    <None Include="shaders\finalStereoF.glsl" />
+    <None Include="shaders\fxaaF.glsl" />
+    <None Include="shaders\gaussF.glsl" />
+    <None Include="shaders\normalRuffF.glsl" />
+    <None Include="shaders\normalRuffV.glsl" />
+    <None Include="shaders\normalRuffAnimV.glsl" />
+    <None Include="shaders\gBufferAnimV.glsl" />
+    <None Include="shaders\gBufferF.glsl" />
+    <None Include="shaders\gBufferV.glsl" />
+    <None Include="shaders\gizF.glsl" />
+    <None Include="shaders\gizV.glsl" />
+    <None Include="shaders\giz_circV.glsl" />
+    <None Include="shaders\gridF.glsl" />
+    <None Include="shaders\lumaAdaptF.glsl" />
+    <None Include="shaders\lumaInitF.glsl" />
+    <None Include="shaders\paintProjF.glsl" />
+    <None Include="shaders\paintProjV.glsl" />
+    <None Include="shaders\paintStrokeF.glsl" />
+    <None Include="shaders\selRectF.glsl" />
+    <None Include="shaders\selRectV.glsl" />
+    <None Include="shaders\shadowAnimV.glsl" />
+    <None Include="shaders\shadowF.glsl" />
+    <None Include="shaders\shadowV.glsl" />
+    <None Include="shaders\skyF.glsl" />
+    <None Include="shaders\skyV.glsl" />
+    <None Include="shaders\ssao_32F.glsl" />
+    <None Include="shaders\ssao_64F.glsl" />
+    <None Include="shaders\ssrF.glsl" />
+    <None Include="shaders\stencilGeoAnimV.glsl" />
+    <None Include="shaders\stencilGeoF.glsl" />
+    <None Include="shaders\stencilGeoV.glsl" />
+    <None Include="shaders\stencilHiAnimV.glsl" />
+    <None Include="shaders\stencilHiF.glsl" />
+    <None Include="shaders\stencilHiV.glsl" />
+    <None Include="shaders\stereoPostF.glsl" />
+    <None Include="shaders\stereoPrevF.glsl" />
+    <None Include="shaders\tonemapF.glsl" />
+    <None Include="shaders\transpCompF.glsl" />
+    <None Include="shaders\transpF.glsl" />
+    <None Include="shaders\transpV.glsl" />
+    <None Include="shaders\txtDieF.glsl" />
+    <None Include="shaders\txtF.glsl" />
+    <None Include="shaders\txtG.glsl" />
+    <None Include="shaders\txtV.glsl" />
+    <None Include="shaders\volumeLightF.glsl" />
+    <None Include="shaders\volumeLightV.glsl" />
+    <None Include="shaders\wireframeF.glsl" />
+    <None Include="shaders\wireframeV.glsl" />
+    <None Include="shaders\wsQuadV.glsl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{412611F3-A5A8-46C5-9FA5-DD6A0506CEFB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Shadows_Spider</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Shadows_Spider</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\aleks\source\repos\assimp-master\include;C:\openGL_middleware\glew-2.1.0\include;C:\openGL_middleware\glm-0.9.9-a2\glm;C:\openGL_middleware\glfw-3.2.1.bin.WIN64\include;X:\Autodesk\FBX\FBX SDK\2019.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc140-mt.lib;opengl32.lib;glew32d.lib;glfw3.lib;glu32.lib;libfbxsdk-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\openGL_middleware\Assimp\Debug;C:\openGL_middleware\glew-2.1.0\lib\Debug\x64;C:\openGL_middleware\glfw-3.2.1.bin.WIN64\lib-vc2015;X:\Autodesk\FBX\FBX SDK\2019.0\lib\vs2015\x64\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <PerUserRedirection>true</PerUserRedirection>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\aleks\source\repos\assimp-master\include;C:\openGL_middleware\glew-2.1.0\include;C:\openGL_middleware\glm-0.9.9-a2\glm;C:\openGL_middleware\glfw-3.2.1.bin.WIN64\include;X:\Autodesk\FBX\FBX SDK\2019.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc140-mt.lib;opengl32.lib;glew32.lib;glfw3.lib;glu32.lib;libfbxsdk-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\openGL_middleware\Assimp\Release;C:\openGL_middleware\glew-2.1.0\lib\Release\x64;C:\openGL_middleware\glfw-3.2.1.bin.WIN64\lib-vc2015;X:\Autodesk\FBX\FBX SDK\2019.0\lib\vs2015\x64\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <PerUserRedirection>true</PerUserRedirection>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

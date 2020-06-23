@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shadows_Spider", "Shadows_Spider.vcxproj", "{412611F3-A5A8-46C5-9FA5-DD6A0506CEFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{412611F3-A5A8-46C5-9FA5-DD6A0506CEFB}.Debug|x64.ActiveCfg = Debug|x64
+		{412611F3-A5A8-46C5-9FA5-DD6A0506CEFB}.Debug|x64.Build.0 = Debug|x64
+		{412611F3-A5A8-46C5-9FA5-DD6A0506CEFB}.Release|x64.ActiveCfg = Release|x64
+		{412611F3-A5A8-46C5-9FA5-DD6A0506CEFB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92678AB3-7146-4430-B88D-394E324E6F28}
+	EndGlobalSection
+EndGlobal
