@@ -1,4 +1,5 @@
-﻿/*
+﻿#include "pch.h"
+/*
 reference:
 https://www.gamedev.net/forums/topic/653502-useful-things-you-might-want-to-know-about-fbxsdk/
 */

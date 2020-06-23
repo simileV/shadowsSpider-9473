@@ -1,3 +1,5 @@
+#include "pch.h"
+
 /*
 reference:
 	https://github.com/leonardo98/TexturedAssimp3DAnimationsOpenGL

@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "StringManip.h"
 
 string stringToUpper(string myString)

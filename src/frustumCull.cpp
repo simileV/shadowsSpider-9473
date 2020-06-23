@@ -1,3 +1,5 @@
+#include "pch.h"
+
 /*
 reference:
 https://www.gamedev.net/resources/_/technical/general-programming/frustum-culling-r4613
