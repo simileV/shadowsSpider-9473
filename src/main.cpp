@@ -22,11 +22,17 @@ int main(int argc, char *argv[]) //DEBUG FBX TO ABJ CONVERSION / CREATION
 	glfwWindowHint(GLFW_DECORATED, GL_FALSE); //
 
 	/* WIDTH / HEIGHT */
-	myAbj.monitorX = 1920;
-	myAbj.monitorY = 1080;
 
-	myAbj.width = 1280;
-	myAbj.height = 720;
+	myAbj.monitorX = 600;
+	myAbj.monitorY = 675;
+	myAbj.width = 600;
+	myAbj.height = 600;
+
+	//myAbj.monitorX = 1920;
+	//myAbj.monitorY = 1080;
+
+	//myAbj.width = 1280;
+	//myAbj.height = 720;
 
 	//myAbj.width = 800;
 	//myAbj.height = 600;
@@ -82,7 +88,8 @@ int main(int argc, char *argv[]) //DEBUG FBX TO ABJ CONVERSION / CREATION
 	}
 
 	//myAbj.startupSceneName = "AItest";
-	myAbj.startupSceneName = "lerpTest0";
+	//myAbj.startupSceneName = "lerpTest0";
+	myAbj.startupSceneName = "dirLightPosTest";
 	//myAbj.startupSceneName = "stompBox";
 	//myAbj.startupSceneName = "fbxAnimTest";
 

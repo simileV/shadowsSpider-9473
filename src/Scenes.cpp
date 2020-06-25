@@ -591,14 +591,14 @@ void startupScene(string name)
 		}
 
 		{
-			myAbj.createNonFBX = nonFBX_VBOup("SPOT", "spotTest", 0);
-			//myAbj.createNonFBX = nonFBX_VBOup("DIR", "dirTest", 0);
+			//myAbj.createNonFBX = nonFBX_VBOup("SPOT", "spotTest", 0);
+			myAbj.createNonFBX = nonFBX_VBOup("DIR", "dirTest", 0);
 			//myAbj.createNonFBX = nonFBX_VBOup("POINT", "pointTest", 0);
 
-			//myAbj.createNonFBX->t->val_3 = glm::vec3(0.f, 10.f, 0.f);
+			myAbj.createNonFBX->t->val_3 = glm::vec3(0.f, 10.f, 0.f);
 			//myAbj.createNonFBX->t->val_3 = glm::vec3(0.f, 0.f, 0.f);
 			//myAbj.createNonFBX->t->val_3 = glm::vec3(5.f, 5.f, 2.f);
-			myAbj.createNonFBX->t->val_3 = glm::vec3(5.f, 17.f, 27.f);
+			//myAbj.createNonFBX->t->val_3 = glm::vec3(5.f, 17.f, 27.f);
 			myAbj.createNonFBX->spotTarget = glm::vec3(0, 10, -10);
 
 			//myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, 0.f, 0.f);
@@ -631,7 +631,14 @@ void startupScene(string name)
 			myAbj.createNonFBX->ty->val_f = 32.f;
 			myAbj.createNonFBX->tz->val_f = 32.f;
 			//myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, -80.f, 0.f);
-			myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, 45.f, 0.f);
+			myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, 45.f, 0.f);			
+			
+			//myAbj.createNonFBX = nonFBX_VBOup("DIR", "sun", 0);
+			//myAbj.createNonFBX->tx->val_f = 32.f;
+			//myAbj.createNonFBX->ty->val_f = 32.f;
+			//myAbj.createNonFBX->tz->val_f = 32.f;
+			////myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, -80.f, 0.f);
+			//myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, 45.f, 0.f);
 
 			myAbj.createNonFBX->piv->val_3 = glm::vec3(myAbj.createNonFBX->tx->val_f, myAbj.createNonFBX->ty->val_f, myAbj.createNonFBX->tz->val_f);
 			myAbj.createNonFBX->Cgiz = glm::vec3(1.f, 0.f, 0.f);
@@ -670,6 +677,139 @@ void startupScene(string name)
 			//key0->val_f = 1.f;
 
 			cubeKeys(myObj);
+
+			myFBXtoAbj->readAbjStaticXML("fbx/cubeBig.abjmesh", myObj);
+		}
+
+		{
+			myObj = make_shared<Object>();
+			myObj->rename("planeHuge0");
+			myObj->type = "OBJ";
+			//myObj->albedoM->val_s = "BLANK_ALBEDO";
+			myObj->albedoM->val_s = "CHECKER_ALBEDO";
+			myObj->ruffM->val_s = "WHITE_RUFF";
+			myObj->albedoTile->val_2 = glm::vec2(4.f);
+			myObj->sx->val_f = 25.f;
+			myObj->sy->val_f = 25.f;
+			myObj->sz->val_f = 25.f;
+
+			myObj->tx->val_f = 0.f;
+			myObj->ty->val_f = -10.f;
+			myObj->tz->val_f = -20.f;
+
+			myFBXtoAbj->readAbjStaticXML("fbx/planeHuge.abjmesh", myObj);
+		}
+
+		{
+			myObj = make_shared<Object>();
+			myObj->rename("planeHuge1");
+			myObj->type = "OBJ";
+			//myObj->albedoM->val_s = "BLANK_ALBEDO";
+			myObj->albedoM->val_s = "CHECKER_ALBEDO";
+			myObj->ruffM->val_s = "WHITE_RUFF";
+			myObj->albedoTile->val_2 = glm::vec2(4.f);
+			myObj->sx->val_f = 25.f;
+			myObj->sy->val_f = 25.f;
+			myObj->sz->val_f = 25.f;
+
+			myObj->tx->val_f = 0.f;
+			myObj->ty->val_f = -10.f;
+			myObj->tz->val_f = -20.f;
+
+			myObj->r->val_3 = glm::vec3(90.f, 0.f, 0.f);
+			myFBXtoAbj->readAbjStaticXML("fbx/planeHuge.abjmesh", myObj);
+		}
+
+		//{
+		//	myObj = make_shared<Object>();
+		//	myObj->rename("sphere0");
+		//	myObj->type = "OBJ";
+		//	myObj->albedoM->val_s = "CHECKER_ALBEDO";
+		//	myObj->albedoTile->val_2 = glm::vec2(2.f);
+		//	myObj->sx->val_f = 3.f;
+		//	myObj->sy->val_f = 3.f;
+		//	myObj->sz->val_f = 3.f;
+
+		//	myObj->tx->val_f = 0.f;
+		//	myObj->ty->val_f = 10.f;
+		//	myObj->tz->val_f = -10.f;
+
+		//	myFBXtoAbj->readAbjStaticXML("fbx/sphere.abjmesh", myObj);
+		//}
+
+		//{
+		//	myObj = make_shared<Object>();
+		//	myObj->rename("sphere1");
+		//	myObj->type = "OBJ";
+		//	myObj->albedoM->val_s = "CHECKER_ALBEDO";
+		//	myObj->albedoTile->val_2 = glm::vec2(2.f);
+		//	myObj->sx->val_f = 3.f;
+		//	myObj->sy->val_f = 3.f;
+		//	myObj->sz->val_f = 3.f;
+
+		//	//myObj->r->val_3 = glm::vec3(90.f, 0.f, 0.f);
+		//	myFBXtoAbj->readAbjStaticXML("fbx/sphere.abjmesh", myObj);
+		//}
+	}
+
+	if (name == "dirLightPosTest")
+	{
+		{
+			myAbj.createNonFBX = nonFBX_VBOup("DIR", "sun", 0);
+			//myAbj.createNonFBX->tx->val_f = 32.f;
+			myAbj.createNonFBX->ty->val_f = 0.f;
+			//myAbj.createNonFBX->tz->val_f = 32.f;
+			//myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, -80.f, 0.f);
+			//myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, 45.f, 0.f);
+			//myAbj.createNonFBX->r->val_3 = glm::vec3(0.f, -90.f, 0.f);
+			//myAbj.createNonFBX->r->val_3 = glm::vec3(0.f, 0.f, -90.f);
+			//myAbj.createNonFBX->r->val_3 = glm::vec3(-45, 0.f, 0.f);
+			myAbj.createNonFBX->r->val_3 = glm::vec3(-90.f, 0.f, 0.f);
+
+			//myAbj.createNonFBX = nonFBX_VBOup("DIR", "sun", 0);
+			//myAbj.createNonFBX->tx->val_f = 32.f;
+			//myAbj.createNonFBX->ty->val_f = 32.f;
+			//myAbj.createNonFBX->tz->val_f = 32.f;
+			////myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, -80.f, 0.f);
+			//myAbj.createNonFBX->r->val_3 = glm::vec3(-25.f, 45.f, 0.f);
+
+			myAbj.createNonFBX->piv->val_3 = glm::vec3(myAbj.createNonFBX->tx->val_f, myAbj.createNonFBX->ty->val_f, myAbj.createNonFBX->tz->val_f);
+			myAbj.createNonFBX->Cgiz = glm::vec3(1.f, 0.f, 0.f);
+			//myAbj.createNonFBX->setTarg(i->targO, 0.f);
+			//myAbj.createNonFBX->setTarg(glm::vec3(0.f, 6.f, -10.f), 0.f);
+			//myAbj.createNonFBX->lSpotO->val_f = 40.f;
+			myAbj.createNonFBX->lInten->val_f = 5.f;
+			myAbj.allObj.push_back(myAbj.createNonFBX);
+			myAbj.allCamLi.push_back(myAbj.createNonFBX);
+		}
+
+		{
+			myFBXtoAbj = new FBXtoAbj();
+			//myFBXtoAbj->WriteAbjXML("fbx/cubeBig.fbx");
+
+			delete myFBXtoAbj;
+		}
+
+		auto myObj = make_shared<Object>();
+
+		{
+			myObj = make_shared<Object>();
+			myObj->rename("lerpCube");
+			myObj->type = "OBJ";
+			myObj->albedoM->val_s = "GREEN_ALBEDO";
+			myObj->ruffM->val_s = "GRAY_RUFF";
+			//myObj->normalM->val_s = "TIGHTBRICK_NORMAL";
+			//myObj->normalTile->val_2 = glm::vec2(2.f);
+			myObj->sx->val_f = .25f;
+			myObj->sy->val_f = .25f;
+			myObj->sz->val_f = .25f;
+
+			//shared_ptr<MultiAttr> key0 = make_shared<MultiAttr>(0);
+			//key0->name = "key0";
+			//key0->type = "float";
+			//key0->val_f = 1.f;
+
+			//cubeKeys(myObj);
 
 			myFBXtoAbj->readAbjStaticXML("fbx/cubeBig.abjmesh", myObj);
 		}
