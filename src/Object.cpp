@@ -1598,27 +1598,27 @@ void Object::shadowMatrixPass(string type)
 			depth_or_depthBiasMVP = PM_shadow * VM_shadow * MM;
 	}
 
-	else if (shadowObjTemp->camLiType->val_s == "POINT")
-	{
-		if (type == "render")
-			depth_or_depthBiasMVP = myAbj.PM_cube * myAbj.VM_cube * myAbj.MM_cube * MM;
-	}
+	//else if (shadowObjTemp->camLiType->val_s == "POINT")
+	//{
+	//	if (type == "render")
+	//		depth_or_depthBiasMVP = myAbj.PM_cube * myAbj.VM_cube * myAbj.MM_cube * MM;
+	//}
 
-	else if (shadowObjTemp->camLiType->val_s == "SPOT")
-	{
-		PM_shadow = glm::perspective(45.f, 1.f, 2.f, 200.f);
-		//PM_shadow = glm::perspective(45.f, 1.f, 2.f, 100.f);
+	//else if (shadowObjTemp->camLiType->val_s == "SPOT")
+	//{
+	//	PM_shadow = glm::perspective(45.f, 1.f, 2.f, 200.f);
+	//	//PM_shadow = glm::perspective(45.f, 1.f, 2.f, 100.f);
 
-		VM_shadow = glm::lookAt(glm::vec3(shadowObjTemp->tx->val_f, shadowObjTemp->ty->val_f, shadowObjTemp->tz->val_f), glm::vec3(0.f), glm::vec3(0.f, 1.f, 0.f));
+	//	VM_shadow = glm::lookAt(glm::vec3(shadowObjTemp->tx->val_f, shadowObjTemp->ty->val_f, shadowObjTemp->tz->val_f), glm::vec3(0.f), glm::vec3(0.f, 1.f, 0.f));
 
-		depth_or_depthBiasMVP = PM_shadow * VM_shadow * MM; //
+	//	depth_or_depthBiasMVP = PM_shadow * VM_shadow * MM; //
 
-		if (type == "UBO")
-			depth_or_depthBiasMVP = biasM * PM_shadow * VM_shadow * MM;
+	//	if (type == "UBO")
+	//		depth_or_depthBiasMVP = biasM * PM_shadow * VM_shadow * MM;
 
-		else if (type == "render")
-			depth_or_depthBiasMVP = PM_shadow * VM_shadow * MM;
-	}
+	//	else if (type == "render")
+	//		depth_or_depthBiasMVP = PM_shadow * VM_shadow * MM;
+	//}
 
 	if (type == "UBO")
 		glNamedBufferSubData(myAbj.uboLight, myAbj.lightIter * sizeof(LightData) - sizeof(glm::mat4), sizeof(depth_or_depthBiasMVP), &depth_or_depthBiasMVP);
