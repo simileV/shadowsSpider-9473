@@ -794,7 +794,7 @@ void startupScene(string name)
 
 		{
 			myObj = make_shared<Object>();
-			myObj->rename("lerpCube");
+			myObj->rename("sphere");
 			myObj->type = "OBJ";
 			myObj->albedoM->val_s = "GREEN_ALBEDO";
 			myObj->ruffM->val_s = "GRAY_RUFF";
@@ -834,7 +834,7 @@ void startupScene(string name)
 
 			myObj->tx->val_f = 0.f;
 			myObj->ty->val_f = -10.f;
-			myObj->tz->val_f = -20.f;
+			myObj->tz->val_f = 0.f;
 
 			myFBXtoAbj->readAbjStaticXML("fbx/planeHuge.abjmesh", myObj);
 		}
@@ -851,9 +851,9 @@ void startupScene(string name)
 			myObj->sy->val_f = 25.f;
 			myObj->sz->val_f = 25.f;
 
-			myObj->tx->val_f = 0.f;
-			myObj->ty->val_f = -10.f;
-			myObj->tz->val_f = -20.f;
+			//myObj->tx->val_f = 0.f;
+			//myObj->ty->val_f = -10.f;
+			//myObj->tz->val_f = -20.f;
 
 			myObj->r->val_3 = glm::vec3(90.f, 0.f, 0.f);
 			myFBXtoAbj->readAbjStaticXML("fbx/planeHuge.abjmesh", myObj);

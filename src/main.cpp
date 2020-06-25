@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) //DEBUG FBX TO ABJ CONVERSION / CREATION
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	//glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-	glfwWindowHint(GLFW_DECORATED, GL_FALSE); //
+	//glfwWindowHint(GLFW_DECORATED, GL_FALSE); //
 
 	/* WIDTH / HEIGHT */
 

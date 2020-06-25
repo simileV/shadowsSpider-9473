@@ -1,6 +1,30 @@
 #include "pch.h"
 #include "GL_render.h"
 
+void printGLM4x4(glm::mat4 in4, string name)
+{
+	string toPrint = "glm::mat4(";
+
+	for (int i = 0; i < in4.length(); i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			toPrint += to_string(float(in4[i][j]));
+
+			if (i == in4.length() - 1 && j == 3)
+				toPrint += "";
+			else
+				toPrint += " , ";
+
+		}
+	}
+
+	toPrint += ");";
+
+	cout << name << " PRINTED = " << toPrint << endl;
+}
+
+
 void bbViz()
 {
 	for (auto &i : myAbj.allObj)
@@ -734,47 +758,6 @@ void renderFrame()
 		}
 	}
 
-	//for (auto &i : myAbj.allCamLi)
-	//{
-	//	if (i->camLiTypeGet("cam") && i == myAbj.selCamLi)
-	//	{
-	//		if (i->dirtyVM)
-	//			VMup(i);
-	//	}
-	//}
-
-	///* MVPGET / VAO LOAD */
-	//if (myAbj.stereoTgl)
-	//{
-	//	for (auto &i : myAbj.allCamLi)
-	//	{
-	//		if (i->camLiTypeGet("cam"))
-	//		{
-	//			if ((myAbj.stereoLR == 0 && i->name->val_s == "stereo0") || (myAbj.stereoLR == 1 && i->name->val_s == "stereo1"))
-	//			{
-	//				//cout << "VMup for " << i->name->val_s << endl;
-
-	//				if (i->dirtyVM)
-	//					VMup(i);
-
-	//				myAbj.selCamLi = i;
-	//			}
-	//		}
-	//	}
-	//}
-
-	//else
-	//{
-	//	for (auto &i : myAbj.allCamLi)
-	//	{
-	//		if (i->camLiTypeGet("cam") && (i->v->val_b || i == myAbj.selCamLi))
-	//		{
-	//			if (i->dirtyVM)
-	//				VMup(i);
-	//		}
-	//	}
-	//}
-
 	for (auto &i : myAbj.allObj)
 	{
 		//if (i->type != "SELRECT" && i->type != "TXT")
@@ -790,6 +773,17 @@ void renderFrame()
 			dupeStenFix_check(i);
 
 		i->VAO_load();
+	}
+
+	if (myAbj.matchCamera)
+	{
+		//myAbj.selCam->MM = glm::mat4(0.036636, 0.000000, 0.999329, 0.000000, 0.367410, 0.929961, -0.013470, 0.000000, -0.929337, 0.367657, 0.034070, 0.000000, -24.934433, 7.472488, 0.453848, 1.000000);
+		//myAbj.selCam->VM = glm::mat4(0.036636, 0.367410, -0.929337, 0.000000, 0.000000, 0.929961, 0.367657, 0.000000, 0.999329, -0.013470, 0.034070, 0.000000, 0.459960, 2.218156, -25.935266, 1.000000);
+
+		myAbj.selCamLi->MM = glm::mat4(0.707107, 0.000000, -0.707107, 0.000000, -0.235702, 0.942809, -0.235702, 0.000000, 0.666667, 0.333333, 0.666667, 0.000000, 20.000000, 10.000000, 20.000000, 1.000000);
+		myAbj.selCamLi->VM = glm::mat4(0.707107, -0.235702, 0.666667, 0.000000, 0.000000, 0.942809, 0.333333, 0.000000, -0.707107, -0.235702, 0.666667, 0.000000, 0.000000, 0.000000, -30.000002, 1.000000);
+		myAbj.selCamLi->PM = glm::mat4(2.144507, 0.000000, 0.000000, 0.000000, 0.000000, 2.144507, 0.000000, 0.000000, 0.000000, 0.000000, -1.000020, -1.000000, 0.000000, 0.000000, -0.020000, 0.000000);
+
 	}
 
 	/* FRUSTUM CULL */

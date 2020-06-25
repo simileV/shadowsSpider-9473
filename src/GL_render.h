@@ -37,4 +37,6 @@ glm::quat LookAtQuat(glm::vec3, glm::vec3);
 
 int findAnimPosition(float animTime, MultiAttr multi);
 
+void printGLM4x4(glm::mat4, string);
+
 #endif

@@ -14,7 +14,7 @@ layout(bindless_sampler, location = 1) uniform sampler2D ssr;
 layout(bindless_sampler, location = 2) uniform sampler2D cursor;
 layout(bindless_sampler, location = 3) uniform sampler2D deferred;
 layout(bindless_sampler, location = 4) uniform sampler2D brush;
-layout(bindless_sampler, location = 5) uniform sampler2D normalRuff1_64; 
+layout(bindless_sampler, location = 5) uniform sampler2D normalRuff1; 
 layout(bindless_sampler, location = 6) uniform sampler2D gBuf7; //BOIT reveal
 layout(bindless_sampler, location = 7) uniform sampler2D bill;
 layout(bindless_sampler, location = 8) uniform sampler2D tonemap;
@@ -52,10 +52,13 @@ float CalcLuma(vec3 rgb)
 void main() //3D 
 {
     float revealageT = texture(gBuf7, v.uv).x; // !!!!!!!!!
-	float ssrInten = texture(normalRuff1_64, v.uv).r;
+	float ssrInten = texture(normalRuff1, v.uv).r;
 	//Ci = texture(fxaa, v.uv).rgb + (revealageT * (ssrInten * texture(ssr, v.uv).rgb));
 
 	Ci = texture(fxaa, v.uv).rgb + (ssrInten * texture(ssr, v.uv).rgb);
+
+//	Ci = texture(ssr, v.uv).rgb;
+//	Ci = texture(fxaa, v.uv).rgb;
 
 	//Ci = ssrInten * texture(ssr, v.uv).rgb;
 	//Ci = texture(ssr, v.uv).rgb;

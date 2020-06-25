@@ -48,7 +48,7 @@ void camInit()
 
 		//{ "PERSP", "persp", { 0.f, 10.f, 10.f } }, //// !!!
 		//{ "PERSP", "persp", { 10.f, 10.f, 10.f } }, //// !!!
-		{ "PERSP", "persp", { 20.f, 20.f, 20.f } }, //// !!!
+		{ "PERSP", "persp", { 20.f, 10.f, 20.f } }, //// !!!
 
 
 		//{ "THIRD", "third", { 20.f, 20.f, 20.f } }, /// !!!!! 

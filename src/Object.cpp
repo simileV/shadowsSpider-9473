@@ -1923,22 +1923,6 @@ void Object::proUse()
 				glProgramUniform4fv(proH, glGetUniformLocation(proH, "camUp_WS"), 1, &comboU.x);
 			}
 
-			else if (proN == "pNormalRuff" || proN == "pNormalRuffAnim")
-			{
-				glProgramUniformMatrix4fv(proH, glGetUniformLocation(proH, "MM"), 1, GL_FALSE, &MM[0][0]);
-
-				comboU = glm::vec4(ssrInten->val_f, 0.f, 0.f, 0.f);
-				glProgramUniform4fv(proH, glGetUniformLocation(proH, "comboU0"), 1, &comboU.x);
-
-				tileMaps(proH);
-
-				for (auto &j : myAbj.allTexMaps)
-				{
-					if (j.name == ruffM->val_s)
-						glProgramUniformHandleui64ARB(proH, 0, topLayer(j).tex0_64);
-				}
-			}
-
 			else if (proN == "pDown")
 			{
 				glProgramUniformHandleui64ARB(proH, 0, myAbj.downSamp_64);
@@ -2057,6 +2041,22 @@ void Object::proUse()
 
 				comboU = glm::vec4(myAbj.edgeDetect_mode, myAbj.myFSQ->fxaaSubPix->val_f, myAbj.myFSQ->fxaaEdgeThr->val_f, myAbj.myFSQ->fxaaEdgeThrMin->val_f);
 				glProgramUniform4fv(proH, glGetUniformLocation(proH, "comboU0"), 1, &comboU.x);
+			}
+
+			else if (proN == "pNormalRuff" || proN == "pNormalRuffAnim")
+			{
+				glProgramUniformMatrix4fv(proH, glGetUniformLocation(proH, "MM"), 1, GL_FALSE, &MM[0][0]);
+
+				comboU = glm::vec4(ssrInten->val_f, 0.f, 0.f, 0.f);
+				glProgramUniform4fv(proH, glGetUniformLocation(proH, "comboU0"), 1, &comboU.x);
+
+				tileMaps(proH);
+
+				for (auto& j : myAbj.allTexMaps)
+				{
+					if (j.name == ruffM->val_s)
+						glProgramUniformHandleui64ARB(proH, 0, topLayer(j).tex0_64);
+				}
 			}
 
 			else if (proN == "pSSR")

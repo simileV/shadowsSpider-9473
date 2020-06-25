@@ -475,6 +475,8 @@ struct Abj
 	GLFWwindow *GLFWwin;
 	glm::ivec2 winPosGlobal;
 
+	bool matchCamera = 1;
+
 };
 
 void myAbjInit();

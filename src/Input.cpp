@@ -175,14 +175,9 @@ void keyCallback(GLFWwindow *myWin, int key, int scancode, int action, int mods)
 
 		if (key == GLFW_KEY_1)
 		{
-			for (auto &i : myAbj.allObj)
-			{
-				if (i->name->val_s == "lerpCube")
-				{
-					cout << "pressed 1 for lerpCube" << endl;
-
-				}
-			}
+			printGLM4x4(myAbj.selCamLi->MM, "MM");
+			printGLM4x4(myAbj.selCamLi->VM, "VM");
+			printGLM4x4(myAbj.selCamLi->PM, "PM");
 		}
 
 		else if (key == GLFW_KEY_2) {
