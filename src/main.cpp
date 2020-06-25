@@ -119,20 +119,11 @@ int main(int argc, char *argv[]) //DEBUG FBX TO ABJ CONVERSION / CREATION
 
 	for (auto &i : myAbj.allCamLi)
 	{
-		if (i->camLiType->val_s == "DIR")
+		if (i->camLiType->val_s == "DIR" || i->camLiType->val_s == "SPOT")
+		{
 			i->RM = i->rotOrderUse(i->rotOrder->val_s); //init RM for DIR lights
-
-		if (i->camLiType->val_s == "SPOT")
-			i->RM = i->rotOrderUse(i->rotOrder->val_s); //init RM for SPOT lights
+		}
 	}
-
-	//for (auto &i : myAbj.allObj)
-	//{
-	//	if (i->name->val_s == "stereo0")
-	//	{
-	//		myAbj.selCamLi = i;
-	//	}
-	//}
 
 	addDeleteShadows("add");
 	uboInit();

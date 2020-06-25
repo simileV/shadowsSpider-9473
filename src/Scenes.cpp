@@ -800,9 +800,13 @@ void startupScene(string name)
 			myObj->ruffM->val_s = "GRAY_RUFF";
 			//myObj->normalM->val_s = "TIGHTBRICK_NORMAL";
 			//myObj->normalTile->val_2 = glm::vec2(2.f);
-			myObj->sx->val_f = .25f;
-			myObj->sy->val_f = .25f;
-			myObj->sz->val_f = .25f;
+			//myObj->sx->val_f = .25f;
+			//myObj->sy->val_f = .25f;
+			//myObj->sz->val_f = .25f;			
+			
+			myObj->sx->val_f = 4.f;
+			myObj->sy->val_f = 4.f;
+			myObj->sz->val_f = 4.f;
 
 			//shared_ptr<MultiAttr> key0 = make_shared<MultiAttr>(0);
 			//key0->name = "key0";
@@ -811,7 +815,9 @@ void startupScene(string name)
 
 			//cubeKeys(myObj);
 
-			myFBXtoAbj->readAbjStaticXML("fbx/cubeBig.abjmesh", myObj);
+			//myFBXtoAbj->readAbjStaticXML("fbx/cubeBig.abjmesh", myObj);
+
+			myFBXtoAbj->readAbjStaticXML("fbx/sphere.abjmesh", myObj);
 		}
 
 		{
