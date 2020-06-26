@@ -2607,8 +2607,8 @@ void Object::render()
 		}
 	}
 
-	if (twoSided->val_s == "BLACK" || twoSided->val_s == "FULL")
-		glEnable(GL_CULL_FACE);
+	//if (twoSided->val_s == "BLACK" || twoSided->val_s == "FULL")
+	//	glEnable(GL_CULL_FACE);
 }
 
 void Object::deleteVAO_VBO()

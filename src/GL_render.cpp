@@ -780,9 +780,9 @@ void renderFrame()
 		//myAbj.selCam->MM = glm::mat4(0.036636, 0.000000, 0.999329, 0.000000, 0.367410, 0.929961, -0.013470, 0.000000, -0.929337, 0.367657, 0.034070, 0.000000, -24.934433, 7.472488, 0.453848, 1.000000);
 		//myAbj.selCam->VM = glm::mat4(0.036636, 0.367410, -0.929337, 0.000000, 0.000000, 0.929961, 0.367657, 0.000000, 0.999329, -0.013470, 0.034070, 0.000000, 0.459960, 2.218156, -25.935266, 1.000000);
 
-		myAbj.selCamLi->MM = glm::mat4(0.707107, 0.000000, -0.707107, 0.000000, -0.235702, 0.942809, -0.235702, 0.000000, 0.666667, 0.333333, 0.666667, 0.000000, 20.000000, 10.000000, 20.000000, 1.000000);
-		myAbj.selCamLi->VM = glm::mat4(0.707107, -0.235702, 0.666667, 0.000000, 0.000000, 0.942809, 0.333333, 0.000000, -0.707107, -0.235702, 0.666667, 0.000000, 0.000000, 0.000000, -30.000002, 1.000000);
-		myAbj.selCamLi->PM = glm::mat4(2.144507, 0.000000, 0.000000, 0.000000, 0.000000, 2.144507, 0.000000, 0.000000, 0.000000, 0.000000, -1.000020, -1.000000, 0.000000, 0.000000, -0.020000, 0.000000);
+		//myAbj.selCamLi->MM = glm::mat4(0.707107, 0.000000, -0.707107, 0.000000, -0.235702, 0.942809, -0.235702, 0.000000, 0.666667, 0.333333, 0.666667, 0.000000, 20.000000, 10.000000, 20.000000, 1.000000);
+		//myAbj.selCamLi->VM = glm::mat4(0.707107, -0.235702, 0.666667, 0.000000, 0.000000, 0.942809, 0.333333, 0.000000, -0.707107, -0.235702, 0.666667, 0.000000, 0.000000, 0.000000, -30.000002, 1.000000);
+		//myAbj.selCamLi->PM = glm::mat4(2.144507, 0.000000, 0.000000, 0.000000, 0.000000, 2.144507, 0.000000, 0.000000, 0.000000, 0.000000, -1.000020, -1.000000, 0.000000, 0.000000, -0.020000, 0.000000);
 
 	}
 
@@ -940,34 +940,34 @@ void renderFrame()
 		}
 	}
 
-	for (auto &i : myAbj.allGiz) //ALL GIZ
-	{
-		if (!i->gizSideObj && searchUp(i))
-		{
-			//cout << "rendering allGiz ... : " << i->name->val_s << endl;
+	//for (auto &i : myAbj.allGiz) //ALL GIZ
+	//{
+	//	if (!i->gizSideObj && searchUp(i))
+	//	{
+	//		//cout << "rendering allGiz ... : " << i->name->val_s << endl;
 
-			glDisable(GL_DEPTH_TEST);
-			glDisable(GL_CULL_FACE);
-			i->render();
-			glEnable(GL_DEPTH_TEST);
-			glEnable(GL_CULL_FACE);
-		}
-	}
+	//		glDisable(GL_DEPTH_TEST);
+	//		glDisable(GL_CULL_FACE);
+	//		i->render();
+	//		glEnable(GL_DEPTH_TEST);
+	//		glEnable(GL_CULL_FACE);
+	//	}
+	//}
 
-	if (myAbj.myGizNull->v->val_b && myAbj.myGizNull->gizType == "R")
-	{
-		glUseProgram2("pGiz_circ");
+	//if (myAbj.myGizNull->v->val_b && myAbj.myGizNull->gizType == "R")
+	//{
+	//	glUseProgram2("pGiz_circ");
 
-		for (auto &i : myAbj.allGiz)
-		{
-			if (i->type == "GIZ_CIRC" || i->type == "GIZ_CIRC_HALF")
-			{
-				glDisable(GL_DEPTH_TEST);
-				i->render();
-				glEnable(GL_DEPTH_TEST);
-			}
-		}
-	}
+	//	for (auto &i : myAbj.allGiz)
+	//	{
+	//		if (i->type == "GIZ_CIRC" || i->type == "GIZ_CIRC_HALF")
+	//		{
+	//			glDisable(GL_DEPTH_TEST);
+	//			i->render();
+	//			glEnable(GL_DEPTH_TEST);
+	//		}
+	//	}
+	//}
 
 	bbViz();
 

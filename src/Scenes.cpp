@@ -807,6 +807,7 @@ void startupScene(string name)
 			myObj->sx->val_f = 4.f;
 			myObj->sy->val_f = 4.f;
 			myObj->sz->val_f = 4.f;
+			myObj->bb->val_b = 1;
 
 			//shared_ptr<MultiAttr> key0 = make_shared<MultiAttr>(0);
 			//key0->name = "key0";
