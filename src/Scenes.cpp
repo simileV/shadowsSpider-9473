@@ -794,47 +794,20 @@ void startupScene(string name)
 
 		{
 			myObj = make_shared<Object>();
-			myObj->rename("sphere");
+			myObj->rename("plane0");
 			myObj->type = "OBJ";
-			myObj->albedoM->val_s = "GREEN_ALBEDO";
-			myObj->ruffM->val_s = "GRAY_RUFF";
-			//myObj->normalM->val_s = "TIGHTBRICK_NORMAL";
-			//myObj->normalTile->val_2 = glm::vec2(2.f);
-			//myObj->sx->val_f = .25f;
-			//myObj->sy->val_f = .25f;
-			//myObj->sz->val_f = .25f;			
-			
-			myObj->sx->val_f = 4.f;
-			myObj->sy->val_f = 4.f;
-			myObj->sz->val_f = 4.f;
-			myObj->bb->val_b = 1;
-
-			//shared_ptr<MultiAttr> key0 = make_shared<MultiAttr>(0);
-			//key0->name = "key0";
-			//key0->type = "float";
-			//key0->val_f = 1.f;
-
-			//cubeKeys(myObj);
-
-			//myFBXtoAbj->readAbjStaticXML("fbx/cubeBig.abjmesh", myObj);
-
-			myFBXtoAbj->readAbjStaticXML("fbx/sphere.abjmesh", myObj);
-		}
-
-		{
-			myObj = make_shared<Object>();
-			myObj->rename("planeHuge0");
-			myObj->type = "OBJ";
+			myObj->ruffM->val_s = "CHECKER_INVERTED";
+			myObj->ruffTile->val_2 = glm::vec2(4.f);
 			//myObj->albedoM->val_s = "BLANK_ALBEDO";
 			myObj->albedoM->val_s = "CHECKER_ALBEDO";
 			myObj->ruffM->val_s = "WHITE_RUFF";
 			myObj->albedoTile->val_2 = glm::vec2(4.f);
-			myObj->sx->val_f = 25.f;
-			myObj->sy->val_f = 25.f;
-			myObj->sz->val_f = 25.f;
+			myObj->sx->val_f = 50.f;
+			myObj->sy->val_f = 50.f;
+			myObj->sz->val_f = 50.f;
 
 			myObj->tx->val_f = 0.f;
-			myObj->ty->val_f = -10.f;
+			myObj->ty->val_f = -5.f;
 			myObj->tz->val_f = 0.f;
 
 			myFBXtoAbj->readAbjStaticXML("fbx/planeHuge.abjmesh", myObj);
@@ -842,54 +815,64 @@ void startupScene(string name)
 
 		{
 			myObj = make_shared<Object>();
-			myObj->rename("planeHuge1");
+			myObj->rename("plane1");
 			myObj->type = "OBJ";
-			//myObj->albedoM->val_s = "BLANK_ALBEDO";
+			myObj->ruffM->val_s = "CHECKER_INVERTED";
+			myObj->ruffTile->val_2 = glm::vec2(4.f);
 			myObj->albedoM->val_s = "CHECKER_ALBEDO";
 			myObj->ruffM->val_s = "WHITE_RUFF";
 			myObj->albedoTile->val_2 = glm::vec2(4.f);
-			myObj->sx->val_f = 25.f;
-			myObj->sy->val_f = 25.f;
-			myObj->sz->val_f = 25.f;
+			myObj->sx->val_f = 50.f;
+			myObj->sy->val_f = 50.f;
+			myObj->sz->val_f = 50.f;
 
-			//myObj->tx->val_f = 0.f;
-			//myObj->ty->val_f = -10.f;
-			//myObj->tz->val_f = -20.f;
+			myObj->tx->val_f = 0.f;
+			myObj->ty->val_f = 0.f;
+			myObj->tz->val_f = -20.f;
 
 			myObj->r->val_3 = glm::vec3(90.f, 0.f, 0.f);
 			myFBXtoAbj->readAbjStaticXML("fbx/planeHuge.abjmesh", myObj);
 		}
 
-		//{
-		//	myObj = make_shared<Object>();
-		//	myObj->rename("sphere0");
-		//	myObj->type = "OBJ";
-		//	myObj->albedoM->val_s = "CHECKER_ALBEDO";
-		//	myObj->albedoTile->val_2 = glm::vec2(2.f);
-		//	myObj->sx->val_f = 3.f;
-		//	myObj->sy->val_f = 3.f;
-		//	myObj->sz->val_f = 3.f;
+		{
+			myObj = make_shared<Object>();
+			myObj->rename("sphere");
+			myObj->type = "OBJ";
+			myObj->albedoM->val_s = "CHECKER_ALBEDO";
+			myObj->albedoTile->val_2 = glm::vec2(4.f);
+			myObj->ruffM->val_s = "CHECKER_INVERTED";
+			myObj->ruffTile->val_2 = glm::vec2(4.f);
+			myObj->sx->val_f = 2.f;
+			myObj->sy->val_f = 2.f;
+			myObj->sz->val_f = 2.f;
 
-		//	myObj->tx->val_f = 0.f;
-		//	myObj->ty->val_f = 10.f;
-		//	myObj->tz->val_f = -10.f;
+			myObj->tx->val_f = 10.f;
+			myObj->ty->val_f = 5.f;
+			myObj->tz->val_f = 0.f;
+			myObj->bb->val_b = 1;
 
-		//	myFBXtoAbj->readAbjStaticXML("fbx/sphere.abjmesh", myObj);
-		//}
+			myFBXtoAbj->readAbjStaticXML("fbx/sphere.abjmesh", myObj);
+		}
 
-		//{
-		//	myObj = make_shared<Object>();
-		//	myObj->rename("sphere1");
-		//	myObj->type = "OBJ";
-		//	myObj->albedoM->val_s = "CHECKER_ALBEDO";
-		//	myObj->albedoTile->val_2 = glm::vec2(2.f);
-		//	myObj->sx->val_f = 3.f;
-		//	myObj->sy->val_f = 3.f;
-		//	myObj->sz->val_f = 3.f;
+		{
+			myObj = make_shared<Object>();
+			myObj->rename("teapot");
+			myObj->type = "OBJ";
+			myObj->albedoM->val_s = "CHECKER_ALBEDO";
+			myObj->albedoTile->val_2 = glm::vec2(4.f);
+			myObj->ruffM->val_s = "CHECKER_INVERTED";
+			myObj->ruffTile->val_2 = glm::vec2(4.f);
+			myObj->sx->val_f = .15f;
+			myObj->sy->val_f = .15f;
+			myObj->sz->val_f = .15f;
+			//myObj->bb->val_b = 1;
 
-		//	//myObj->r->val_3 = glm::vec3(90.f, 0.f, 0.f);
-		//	myFBXtoAbj->readAbjStaticXML("fbx/sphere.abjmesh", myObj);
-		//}
+			myObj->tx->val_f = 0.f;
+			myObj->ty->val_f = 5.f;
+			myObj->tz->val_f = 0.f;
+
+			myFBXtoAbj->readAbjStaticXML("fbx/teapotBigCentered.abjmesh", myObj);
+		}
 	}
 
 	if (name == "stompBox")

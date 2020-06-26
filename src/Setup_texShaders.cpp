@@ -340,6 +340,7 @@ void mapInit() //NSIGHT
 	myAbj.allTexMaps.push_back({ "BLANK_ALBEDO", "ALBEDO", "single/BLANK_white_256.tga" });
 	myAbj.allTexMaps.push_back({ "BLACK_ALBEDO", "ALBEDO", "single/BLANK_black_256.tga" });
 	myAbj.allTexMaps.push_back({ "CHECKER_ALBEDO", "ALBEDO", "albedo/checker.png" });
+	myAbj.allTexMaps.push_back({ "CHECKER_INVERTED", "ALBEDO", "albedo/checker_inverted.png" });
 	//myAbj.allTexMaps.push_back({ "checker3", "ALBEDO", "albedo/checker3.png" });
 	//myAbj.allTexMaps.push_back({ "uv", "ALBEDO", "albedo/uv.jpg" });
 	//myAbj.allTexMaps.push_back({ "gold", "ALBEDO", "single/gold_256.tga" });
