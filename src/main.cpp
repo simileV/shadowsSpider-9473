@@ -141,6 +141,7 @@ int main(int argc, char *argv[]) //DEBUG FBX TO ABJ CONVERSION / CREATION
 	myAbj.m_rippleStartTime = GetTickCount();
 	myAbj.jumpTimer = GetTickCount();
 
+	int ctr = 0;
 	do
 	{
 		/* MPF TIMER */
@@ -171,6 +172,22 @@ int main(int argc, char *argv[]) //DEBUG FBX TO ABJ CONVERSION / CREATION
 		}
 
 		renderFrame();
+
+
+
+		cout << "ctr : " << ctr << endl;
+		//cout << "selcam VM = " <<  << endl;
+		printGLM4x4(myAbj.selCamLi->VM, "myAbj.selCam->VM = ");
+		cout << endl;
+		ctr++;
+
+		//match initial VM
+		//myAbj.selCam->VM = glm::mat4(0.707107, -0.235702, 0.666667, 0.000000, 0.000000, 0.942809, 0.333333, 0.000000, -0.707107, -0.235702, 0.666667, 0.000000, 0.000000, 0.000000, -30.000002, 1.000000);
+
+		//myAbj.selCamLi->VM = glm::mat4(1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, -30.000000, 1.000000);
+
+
+
 
 		glfwSwapBuffers(myAbj.GLFWwin);
 		glfwPollEvents();

@@ -21,7 +21,7 @@ void printGLM4x4(glm::mat4 in4, string name)
 
 	toPrint += ");";
 
-	cout << name << " PRINTED = " << toPrint << endl;
+	cout << name << toPrint << endl;
 }
 
 
