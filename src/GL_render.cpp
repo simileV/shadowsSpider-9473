@@ -31,53 +31,7 @@ void bbViz()
 	{
 		if (i->bb->val_b)
 		{
-			if (i->anim->val_b == 1) // has BONE ANIMATION, render individual bones
-			{
-				//cout << "in step1 for " << i->name->val_s << endl;
-
-				i->aabbV4OS.clear();
-				i->aabbV4WS.clear();
-
-				glUseProgram2("pBB");
-
-				for (auto &j : i->bbSkelAll)
-				{
-					//cout << "bbSkelAll name = " << j.name << endl;
-
-					for (auto &k : i->animBones)
-					{
-						if (k.name == j.name)
-						{
-							//cout << "match for bone transform...k / bbSkel = " << k.name << " " << myAbj.bbSkelAll[j].name << endl;
-
-							cout << "match for bone transform...k / bbSkel = " << k.name << endl;
-
-							i->obbMVP = glm::transpose(k.animatedXform) * j.obbMVP; // !!!!!!!!
-							cout << "k.animatedXform = " << glm::to_string(k.animatedXform) << endl;
-
-							/* AABB - STEP 1 - GATHER / STORE */
-							glm::vec4 bbSkelXformMinOS = glm::transpose(k.animatedXform) * glm::vec4(j.min, 1.f);
-							glm::vec4 bbSkelXformMaxOS = glm::transpose(k.animatedXform) * glm::vec4(j.max, 1.f);
-							i->aabbV4OS.push_back(bbSkelXformMinOS);
-							i->aabbV4OS.push_back(bbSkelXformMaxOS);
-
-							glm::vec4 bbSkelXformMinWS = i->MM * bbSkelXformMinOS;
-							glm::vec4 bbSkelXformMaxWS = i->MM * bbSkelXformMaxOS;
-							i->aabbV4WS.push_back(bbSkelXformMinWS);
-							i->aabbV4WS.push_back(bbSkelXformMaxWS);
-
-							break;
-						}
-					}
-
-					i->mvpGet();
-					i->render(); //renders the individual bones
-					cout << "rendering bone " << endl;
-
-				}
-			}
-
-			else if (i->anim->val_b == 0) // STATIC OBJ
+			if (i->anim->val_b == 0) // STATIC OBJ
 			{
 				//glm::vec3 cWireStored; ///
 				vector<glm::vec3> aabb8Pts;
@@ -93,73 +47,82 @@ void bbViz()
 				glm::vec3 bbCenterOS = .5f * (bbMinOS + bbMaxOS);
 				i->obbMVP = glm::translate(glm::mat4(1.f), bbCenterOS) * glm::scale(glm::mat4(1.f), bbSizeOS);
 
+				cout << "~~~~~~~~~~" << endl;
+				cout << "bbMinOS = " << glm::to_string(bbSizeOS) << endl;
+				cout << "bbMaxOS = " << glm::to_string(bbSizeOS) << endl;
+				cout << "bbSizeOS = " << glm::to_string(bbSizeOS) << endl;
+				cout << "bbCenterOS = " << glm::to_string(bbSizeOS) << endl;
+				cout << "~~~~~~~~~~" << endl;
+
+
+
 				i->aabbTgl = 0; i->obbTgl = 1;
 				i->mvpGet();
 				i->render();
 				i->aabbTgl = 0; i->obbTgl = 0;
 
-				///////// 
-				////AABB
-				/////////
-				aabb8Pts.push_back(glm::vec3(i->bbMax.x, i->bbMax.y, i->bbMax.z));
-				aabb8Pts.push_back(glm::vec3(i->bbMin.x, i->bbMax.y, i->bbMax.z));
-				aabb8Pts.push_back(glm::vec3(i->bbMin.x, i->bbMin.y, i->bbMax.z));
-				aabb8Pts.push_back(glm::vec3(i->bbMax.x, i->bbMin.y, i->bbMax.z));
+				/////////// 
+				//////AABB
+				///////////
+				//aabb8Pts.push_back(glm::vec3(i->bbMax.x, i->bbMax.y, i->bbMax.z));
+				//aabb8Pts.push_back(glm::vec3(i->bbMin.x, i->bbMax.y, i->bbMax.z));
+				//aabb8Pts.push_back(glm::vec3(i->bbMin.x, i->bbMin.y, i->bbMax.z));
+				//aabb8Pts.push_back(glm::vec3(i->bbMax.x, i->bbMin.y, i->bbMax.z));
 
-				aabb8Pts.push_back(glm::vec3(i->bbMax.x, i->bbMax.y, i->bbMin.z));
-				aabb8Pts.push_back(glm::vec3(i->bbMin.x, i->bbMax.y, i->bbMin.z));
-				aabb8Pts.push_back(glm::vec3(i->bbMin.x, i->bbMin.y, i->bbMin.z));
-				aabb8Pts.push_back(glm::vec3(i->bbMax.x, i->bbMin.y, i->bbMin.z));
+				//aabb8Pts.push_back(glm::vec3(i->bbMax.x, i->bbMax.y, i->bbMin.z));
+				//aabb8Pts.push_back(glm::vec3(i->bbMin.x, i->bbMax.y, i->bbMin.z));
+				//aabb8Pts.push_back(glm::vec3(i->bbMin.x, i->bbMin.y, i->bbMin.z));
+				//aabb8Pts.push_back(glm::vec3(i->bbMax.x, i->bbMin.y, i->bbMin.z));
 
-				glm::vec4 newBBMin = i->MM * glm::vec4(aabb8Pts[0], 1.f);
-				glm::vec4 newBBMax = i->MM * glm::vec4(aabb8Pts[0], 1.f);
+				//glm::vec4 newBBMin = i->MM * glm::vec4(aabb8Pts[0], 1.f);
+				//glm::vec4 newBBMax = i->MM * glm::vec4(aabb8Pts[0], 1.f);
 
-				for (uint j = 0; j < aabb8Pts.size(); ++j)
-				{
-					glm::vec4 bbPtWS = i->MM * glm::vec4(aabb8Pts[j], 1.f);
-					newBBMin = glm::min(bbPtWS, newBBMin);
-					newBBMax = glm::max(bbPtWS, newBBMax);
-				}
+				//for (uint j = 0; j < aabb8Pts.size(); ++j)
+				//{
+				//	glm::vec4 bbPtWS = i->MM * glm::vec4(aabb8Pts[j], 1.f);
+				//	newBBMin = glm::min(bbPtWS, newBBMin);
+				//	newBBMax = glm::max(bbPtWS, newBBMax);
+				//}
 
-				glm::vec3 bbSizeWS = newBBMax - newBBMin;
-				glm::vec3 bbCenterWS = .5f * (newBBMin + newBBMax);
-				i->aabbMVP = glm::translate(glm::mat4(1.f), bbCenterWS) * glm::scale(glm::mat4(1.f), bbSizeWS);
+				//glm::vec3 bbSizeWS = newBBMax - newBBMin;
+				//glm::vec3 bbCenterWS = .5f * (newBBMin + newBBMax);
+				//i->aabbMVP = glm::translate(glm::mat4(1.f), bbCenterWS) * glm::scale(glm::mat4(1.f), bbSizeWS);
 
-				i->aabbTgl = 1; i->obbTgl = 0;
-				i->mvpGet();
-				i->render();
-				i->aabbTgl = 0; i->obbTgl = 0;
+				//i->aabbTgl = 1; i->obbTgl = 0;
+				//i->mvpGet();
+				//i->render();
+				//i->aabbTgl = 0; i->obbTgl = 0;
 
-				//cout << "bbCenterWS = " << glm::to_string(bbCenterWS) << endl;
+				////cout << "bbCenterWS = " << glm::to_string(bbCenterWS) << endl;
 
-				/* BOUNDING SPHERE */
-				glUseProgram2("pGiz_circ");
+				///* BOUNDING SPHERE */
+				//glUseProgram2("pGiz_circ");
 
-				myAbj.translateSphereVol = glm::translate(glm::mat4(1.f), bbCenterWS) * glm::scale(glm::mat4(1.f), bbSizeWS);
+				//myAbj.translateSphereVol = glm::translate(glm::mat4(1.f), bbCenterWS) * glm::scale(glm::mat4(1.f), bbSizeWS);
 
-				for (auto &j : myAbj.allGiz)
-				{
-					if (j->type == "GIZ_CIRC")
-					{
-						glDisable(GL_DEPTH_TEST);
-						j->spherebbTgl = 1;
+				//for (auto &j : myAbj.allGiz)
+				//{
+				//	if (j->type == "GIZ_CIRC")
+				//	{
+				//		glDisable(GL_DEPTH_TEST);
+				//		j->spherebbTgl = 1;
 
-						glm::vec3 CgizStored = j->Cgiz;
+				//		glm::vec3 CgizStored = j->Cgiz;
 
-						if (i->selected)
-							j->Cgiz = myAbj.Csel;
+				//		if (i->selected)
+				//			j->Cgiz = myAbj.Csel;
 
-						else
-							j->Cgiz = glm::vec3(0.f);
+				//		else
+				//			j->Cgiz = glm::vec3(0.f);
 
-						j->mvpGet();
-						j->render();
+				//		j->mvpGet();
+				//		j->render();
 
-						j->Cgiz = CgizStored;
-						j->spherebbTgl = 0;
-						glEnable(GL_DEPTH_TEST);
-					}
-				}
+				//		j->Cgiz = CgizStored;
+				//		j->spherebbTgl = 0;
+				//		glEnable(GL_DEPTH_TEST);
+				//	}
+				//}
 
 
 			}
@@ -887,87 +850,7 @@ void renderFrame()
 
 	glNamedFramebufferDrawBuffers(myAbj.bgN.fbo0, 1, DrawBuffersBG_1);
 
-	glUseProgram2("pGiz");
-
-	if (myAbj.gizSideTgl)
-	{
-		glViewport(0, 0, (int)myAbj.gizSideS.x, (int)myAbj.gizSideS.y);
-
-		for (auto &i : myAbj.allGizSide)
-		{
-			i->mvpGet();
-			i->render();
-		}
-
-		glViewport(0, 0, myAbj.width, myAbj.height);
-	}
-
-	if (myAbj.myPivot->v->val_b)
-	{
-		myAbj.myPivot->mvpGet();
-		myAbj.myPivot->render();
-	}
-
-	for (auto &i : myAbj.allCamLi) //ALL CAMLI
-	{
-		if (searchUp(i))
-		{
-			if (i->selected)
-			{
-				if (!i->bb->val_b && myAbj.selMode == "OBJ")
-				{
-					//wireframe already, change color only
-					auto Cgiz_temp = i->Cgiz;
-					i->Cgiz = myAbj.Csel;
-					i->render();
-					i->Cgiz = Cgiz_temp;
-				}
-			}
-
-			else
-			{
-				//cout << "name of light to render : " << i->name->val_s << endl;
-
-				glDisable(GL_DEPTH_TEST);
-				glDisable(GL_CULL_FACE);
-				i->render();
-				glEnable(GL_DEPTH_TEST);
-				glEnable(GL_CULL_FACE);
-
-				//cout << "JUST rendered light : " << i->name->val_s << endl;
-
-			}
-		}
-	}
-
-	//for (auto &i : myAbj.allGiz) //ALL GIZ
-	//{
-	//	if (!i->gizSideObj && searchUp(i))
-	//	{
-	//		//cout << "rendering allGiz ... : " << i->name->val_s << endl;
-
-	//		glDisable(GL_DEPTH_TEST);
-	//		glDisable(GL_CULL_FACE);
-	//		i->render();
-	//		glEnable(GL_DEPTH_TEST);
-	//		glEnable(GL_CULL_FACE);
-	//	}
-	//}
-
-	//if (myAbj.myGizNull->v->val_b && myAbj.myGizNull->gizType == "R")
-	//{
-	//	glUseProgram2("pGiz_circ");
-
-	//	for (auto &i : myAbj.allGiz)
-	//	{
-	//		if (i->type == "GIZ_CIRC" || i->type == "GIZ_CIRC_HALF")
-	//		{
-	//			glDisable(GL_DEPTH_TEST);
-	//			i->render();
-	//			glEnable(GL_DEPTH_TEST);
-	//		}
-	//	}
-	//}
+	//
 
 	bbViz();
 
@@ -1107,8 +990,6 @@ void GBuffer_BOIT()
 			i->render();
 	}
 
-	//glDisable(GL_DEPTH_TEST);
-
 	/* OPAQUE PASS */
 	/* ALPHA TESTING in opaque pass shader (for alpha == 1.f) */
 	//if (col.a <= threshold)
@@ -1178,78 +1059,6 @@ void GBuffer_BOIT()
 		}
 	}
 
-	//glDepthMask(GL_TRUE);
-	//glDisable(GL_BLEND);
-
-
-
-
-	///* G BUFFER */
-	//GLenum DrawBuffersOpaque[] =
-	//{
-	//	GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1, GL_COLOR_ATTACHMENT2, GL_COLOR_ATTACHMENT3, GL_COLOR_ATTACHMENT4, GL_COLOR_ATTACHMENT5, GL_COLOR_ATTACHMENT6, GL_COLOR_ATTACHMENT7,
-	//};
-
-	//glNamedFramebufferDrawBuffers(myAbj.gBufN.fbo0, 8, DrawBuffersOpaque);
-
-	//glBindFramebuffer(GL_FRAMEBUFFER, myAbj.gBufN.fbo0);
-	//glViewport(0, 0, myAbj.gBufN.width, myAbj.gBufN.height);
-	//glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-	//setRenderParams_GLApi("back");
-	//glDisable(GL_BLEND);
-
-	///* RENDER ANIMATED / STATIC OPAQUE OBJS */
-	//glUseProgram2("pGBufferAnim");
-
-	//for (auto &i : myAbj.frustumObjs)
-	//{
-	//	if (i->type == "OBJ" && !i->bb->val_b && i->anim->val_b)
-	//	{
-	//		if (i->Ko->val_f == 1.f && i->alphaM->val_s == "BLANK_ALPHA")
-	//			i->render();
-	//	}
-	//}
-
-	//glUseProgram2("pGBuffer");
-
-	//for (auto &i : myAbj.frustumObjs)
-	//{
-	//	if (i->type == "OBJ" && !i->bb->val_b && !i->anim->val_b)
-	//	{
-	//		if (i->Ko->val_f == 1.f && i->alphaM->val_s == "BLANK_ALPHA")
-	//			i->render();
-	//	}
-	//}
-
-	//GLenum DrawBuffersTransp[] = { GL_COLOR_ATTACHMENT6, GL_COLOR_ATTACHMENT7 };
-	//glNamedFramebufferDrawBuffers(myAbj.gBufN.fbo0, 2, DrawBuffersTransp);
-
-	//glDepthMask(GL_FALSE); //read depth from opaque pass but dont write to it
-
-	//float clearColor0[4] = { 0.f, 0.f, 0.f, 0.f };
-	//float clearColor1[4] = { 1.f, 1.f, 1.f, 1.f };
-	//glClearNamedFramebufferfv(myAbj.gBufN.fbo0, GL_COLOR, 0, clearColor0);
-	//glClearNamedFramebufferfv(myAbj.gBufN.fbo0, GL_COLOR, 1, clearColor1);
-
-	//glEnable(GL_BLEND);
-	//glBlendEquation(GL_FUNC_ADD);
-	//glBlendFunci(0, GL_ONE, GL_ONE);
-	//glBlendFunci(1, GL_ZERO, GL_ONE_MINUS_SRC_COLOR);
-
-	//glUseProgram2("pTransp");
-
-	//for (auto &i : myAbj.frustumObjs)
-	//{
-	//	if (i->type == "OBJ" && !i->bb->val_b)
-	//	{
-	//		if (i->Ko->val_f < 1.f || i->alphaM->val_s != "BLANK_ALPHA")
-	//			i->render();
-	//	}
-	//}
-
-	//glDepthMask(GL_TRUE);
-	//glDisable(GL_BLEND);
 }
 
 void postFX()
@@ -1617,6 +1426,8 @@ void VMup(shared_ptr<Object> obj) // WITH barTempStuff
 {
 	glm::mat4 R = glm::yawPitchRoll(glm::radians(obj->r->val_3.x), glm::radians(obj->r->val_3.y), 0.f);
 	//glm::mat4 R = glm::yawPitchRoll(glm::radians(obj->r->val_3.x), glm::radians(-45.f), 0.f);
+	printGLM4x4(R, "R = ");
+	cout << "obj rot = " << glm::to_string(obj->r->val_3) << endl;
 
 	//cout << 
 

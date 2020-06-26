@@ -48,8 +48,7 @@ void camInit()
 
 		//{ "PERSP", "persp", { 0.f, 10.f, 10.f } }, //// !!!
 		//{ "PERSP", "persp", { 10.f, 10.f, 10.f } }, //// !!!
-		{ "PERSP", "persp", { 20.f, 10.f, 20.f } }, //// !!!
-
+		{ "PERSP", "persp", { 20.f, 0.f, 20.f } }, //// !!!
 
 		//{ "THIRD", "third", { 20.f, 20.f, 20.f } }, /// !!!!! 
 	};
@@ -86,9 +85,9 @@ void camInit()
 
 		//cout << "name / myAbj.createNonFBX->targO = " << i.name << " myAbj.createNonFBX->targO " << endl;
 
-		//myAbj.createNonFBX->setTarg(myAbj.createNonFBX->targO, 0.f); //
+		myAbj.createNonFBX->setTarg(myAbj.createNonFBX->targO, 0.f); //
 		
-		myAbj.createNonFBX->targO = glm::vec3(0.f);
+		//myAbj.createNonFBX->targO = glm::vec3(0.f);
 
 		myAbj.createNonFBX->distO = glm::distance(glm::vec3(myAbj.createNonFBX->tx->val_f, myAbj.createNonFBX->ty->val_f, myAbj.createNonFBX->tz->val_f), myAbj.createNonFBX->targO);
 		//myAbj.createNonFBX->setDirty();

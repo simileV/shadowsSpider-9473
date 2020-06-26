@@ -186,6 +186,16 @@ void keyCallback(GLFWwindow *myWin, int key, int scancode, int action, int mods)
 
 		else if (key == GLFW_KEY_3) {
 
+
+			for (auto& i : myAbj.allObj)
+			{
+				//if (i->name->val_s == "teapot" || i->name->val_s == "sphere")
+				if (i->name->val_s == "teapot")
+				{
+					i->bb->val_b = (i->bb->val_b) ? 0 : 1;
+				}
+
+			}
 		}
 
 		else if (key == GLFW_KEY_4) {

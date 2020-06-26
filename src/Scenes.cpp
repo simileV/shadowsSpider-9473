@@ -849,7 +849,7 @@ void startupScene(string name)
 			myObj->tx->val_f = 10.f;
 			myObj->ty->val_f = 5.f;
 			myObj->tz->val_f = 0.f;
-			myObj->bb->val_b = 1;
+			//myObj->bb->val_b = 1;
 
 			myFBXtoAbj->readAbjStaticXML("fbx/sphere.abjmesh", myObj);
 		}
@@ -865,7 +865,8 @@ void startupScene(string name)
 			myObj->sx->val_f = .15f;
 			myObj->sy->val_f = .15f;
 			myObj->sz->val_f = .15f;
-			//myObj->bb->val_b = 1;
+
+			myObj->bb->val_b = 1;
 
 			myObj->tx->val_f = 0.f;
 			myObj->ty->val_f = 5.f;
